@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anggaran"
+        android:layout_centerHorizontal="true"
+        android:textSize="60sp" />
+
+    <EditText
+        android:id="@+id/edtId"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:hint="ID Anggaran"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edtRek"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtId"
+        android:hint="Rekening"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edtTanggal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtRek"
+        android:hint="Tanggal"
+        android:inputType="date"/>
+
+    <EditText
+        android:id="@+id/edtJenis"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtTanggal"
+        android:hint="Jenis"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/edtJumlah"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtJenis"
+        android:hint="Jumlah"
+        android:inputType="numberDecimal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/edtJumlah">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="Submit"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+    </LinearLayout>
+</RelativeLayout>
